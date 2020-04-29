@@ -21,7 +21,7 @@ namespace AreaTrianguloRet
             decimal result = base2 * altura2;
             decimal resultado = result / 2;
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("A área do seu triângulo retângulo é " + resultado + " metros.");
+            Console.WriteLine("A área do seu triângulo retângulo é " + resultado + " m².");
             Console.ForegroundColor = ConsoleColor.Gray;
             
 
