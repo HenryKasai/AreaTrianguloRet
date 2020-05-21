@@ -6,22 +6,25 @@ namespace AreaTrianguloRet
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Insira os dados em metros de seu triângulo retângulo.");
+            Console.WriteLine("Insira os dados de seu triângulo retângulo (todos precisam estar na mesma unidade de medida).");
+
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Base:"); 
             Console.ForegroundColor = ConsoleColor.Red;
             string basey = Console.ReadLine();
+
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Altura:");
             Console.ForegroundColor = ConsoleColor.Red;
             string altura = Console.ReadLine();
-            Console.ForegroundColor = ConsoleColor.Gray;
-            decimal base2 = Convert.ToDecimal(basey);
-            decimal altura2 = Convert.ToDecimal(altura);
-            decimal result = base2 * altura2;
-            decimal resultado = result / 2;
+
+            double base2 = Convert.ToDouble(basey);
+            double altura2 = Convert.ToDouble(altura);
+            double result = base2 * altura2;
+            double resultado = result / 2;
+
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("A área do seu triângulo retângulo é " + resultado + " m².");
+            Console.WriteLine("A área do seu triângulo retângulo é " + resultado);
             Console.ForegroundColor = ConsoleColor.Gray;
             
 
